@@ -1,0 +1,268 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box{
+    background-color: #4169e1;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+img
+{
+    height: 150px;
+    width: 240px;
+    align-content: center;
+}
+header
+{
+    background-color: #ff0000;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+}
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Fira Code',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+}
+#button
+{
+    background-color: #ff0000;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    margin-right:40px;
+    margin-top: 40px;
+}
+.botao-download 
+{
+    box-shadow: #000000;
+    display: inline-block;
+    background-color: #0019fd;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-download:hover 
+{
+    background-color: none;
+}
+.container
+{ 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 12px;
+    color: #fff;
+}
+#banner
+{
+    height: 140px;
+    width: 100%;
+    background-color: #0019fd;
+
+}
+.sobre 
+{
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #ff0000;
+}
+
+.caixa-sobre 
+{
+    max-width: 700px;
+    width: 100%;
+    padding: 32px;
+    background: #0019fd;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+    color: #fff;
+}
+
+.caixa-sobre h2 
+{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.caixa-sobre h3 
+{
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.experiencia
+{
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #0019fd;
+    color:#fff
+}
+.experiencia 
+{
+    width: 100%;      
+    max-width: none;
+    margin: 0;
+    padding: 60px 0;
+}
+
+.linha-do-tempo
+{
+    position: relative;
+    padding-left: 28px;
+    border-left: 2px solid #e2e2e2;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.item::before 
+{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: -29px;                
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: #ff0000;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #e2e2e2;
+    transform: translateX(-50%);
+}
+
+.periodo 
+{
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.item h3 
+{
+    margin: 4px 0 2px;
+}
+
+.empresa 
+{
+    margin: 0 0 8px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.item ul 
+{
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.6;
+    color: #FFF;
+}
+.habilidades 
+{
+    padding: 60px 16px;
+    background-color: #ff0000;
+}
+
+.colunas
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 24px;                     
+}
+
+.caixa 
+{
+    padding: 24px;
+    background: #0019fd;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    color:#ffffff
+}
+
+.caixa h3 
+{
+    margin-top: 0;
+    color:#ffffff
+}
+
+.caixa ul 
+{
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.7;
+    color:#ffffff
+}
+
+/* no celular, as caixas ficam uma embaixo da outra */
+@media (max-width: 700px) 
+{
+    .colunas 
+    {
+    grid-template-columns: 1fr;
+    }
+}
+.h2
+{
+    color:#ffffff;
+}
+h2 
+{
+    color: #ffffff;
+}
+.contato 
+{
+    padding: 60px 16px;
+    text-align: center;
+}
+
+.botao-email 
+{
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 28px;
+    background: #4f46e5;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.botao-email:hover 
+{
+    background: #4338ca;
+}
+.contato
+{
+    position: static;
+    clear: both;
+    padding: 60px 16px;
+    text-align: center;
+}
